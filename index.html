@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Weekly WebDev Challenge #1 - Masteralb Creative</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body>
+
+    <header class="logo">
+        <img alt="Masteralb" class="header_logo" src="images/logo.png">
+    </header>
+
+    <main>
+
+        <!--Register Form-->
+        <div class="container"> 
+            <h2 class="label_form">Register Form</h2>
+            <div class="template_form"> 
+                <form class="form"> 
+                    <div class="element_form"> 
+                        <span class="icon_form"><i class="fa fa-user" aria-hidden="true"></i></span>
+                        <span class="separator_form"></span>
+                        <input class="field_form" type="text" name="username" placeholder="Username" required>
+                    </div>
+                    <div class="element_form">
+                        <span class="icon_form"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                        <span class="separator_form"></span>
+                        <input class="field_form" type="password" name="password" placeholder="Password" required>
+                    </div>
+                    <div class="element_form">
+                        <span class="icon_form"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                        <span class="separator_form"></span>
+                        <input class="field_form" type="password" name="password" placeholder="Confirm Password" required>
+                    </div>
+                    <div class="element_form">
+                        <span class="icon_form"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <span class="separator_form"></span>
+                        <input class="field_form" type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div id="search" class="element_form">
+                        <span class="icon_form"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span class="separator_form"></span>
+                        <select class="field_form" name="city" required>
+                            <option value="" disabled selected>Your Location</option>
+                            <option value="Krakow">Warszawa</option>
+                            <option value="Warszawa">Gdańsk</option>
+                            <option value="Wroclaw">Wrocław</option>
+                        </select>
+                    </div>
+                    <div class="element_form rule_form">
+                        <label class="agreement_form"> I have read and accept the terms of use.
+                            <input type="checkbox" class="checkbox_input">
+                            <span class="checkbox_label"></span>
+                        </label>
+                    </div>
+                    <input class="button_form" type="submit" value="Sign up">	
+                </form>
+                </div>
+            </div>
+
+        <!--Send Email-->
+        <div class="container">
+            <h2 class="label_form">Send Email</h2>
+            <div class="template_form"> 
+                <form class="form"> 
+                    <div class="element_form"> 
+                        <span class="icon_form"><i class="fa fa-user" aria-hidden="true"></i></span>
+                        <span class="separator_form"></span>
+                        <input class="field_form" type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="element_form">
+                        <span class="icon_form"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <span class="separator_form"></span>
+                        <input class="field_form" type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <textarea class="textarea_form" name="message" cols="20" rows="8" placeholder="Type your message..." required></textarea>
+                    <div class="element_form rule_form">    
+                        <label class="agreement_form"> Send a copy to my Email
+                            <input type="checkbox" class="checkbox_input">
+                            <span class="checkbox_label"></span>
+                        </label>
+                    </div>
+                    <input class="button_form " type="submit" value="Send Email">
+                </form>
+            </div>
+        </div>
+
+        <!--Sing In Form-->
+        <div class="container">
+            <h2 class="label_form">Sing In Form</h2>
+            <div class="template_form"> 
+                <form class="form"> 
+                    <div class="element_form"> 
+                        <span class="icon_form"><i class="fa fa-user" aria-hidden="true"></i></span>
+                        <span class="separator_form"></span>
+                        <input class="field_form" type="text" name="username" placeholder="Username" required>
+                    </div>
+                    <div class="element_form">
+                        <span class="icon_form"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                        <span class="separator_form"></span>
+                        <input class="field_form" type="password" name="password" placeholder="Password" required>
+                    </div>
+                    <div class="element_form--duble">
+                        <div class="element_form rule_form duble_element">
+                            <label class="agreement_form"> Remember me
+                            <input type="checkbox" class="checkbox_input">
+                            <span class="checkbox_label"></span>
+                            </label>
+                        </div>
+                        <input class="button_form button_form--small" type="submit" value="Sing in">
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+
+        <!--Recover Form-->
+        <div class="container">
+                <h2 class="label_form">Recover Form</h2>
+                <div class="template_form"> 
+                    <form class="form"> 
+                        <div class="element_form">
+                            <span class="icon_form"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                            <span class="separator_form"></span>
+                            <input class="field_form" type="email" name="email" placeholder="Enter your Email" required>
+                        </div>
+                        <div class="element_form">
+                            <span class="icon_form"><i class="fa fa-mobile" aria-hidden="true"></i></span>
+                            <span class="separator_form"></span>
+                            <input class="field_form" type="number" name="number" placeholder="Enter your Phone number" required pattern="[0-9]{9}" required>
+                        </div>
+                        <div class="element_form--duble small">
+                            <input class="button_form button_form--small " type="submit" value="Send">
+                            <input class="button_form button_form--small button_form--disabled" type="submit" value="Done">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!--Subscribe Form-->
+        <div class="container">
+                <h2 class="label_form">Subscribe Form</h2>
+                <div class="template_form"> 
+                    <form class="form">
+                        <div class="element_form">
+                            <span class="icon_form"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                            <span class="separator_form"></span>
+                            <input class="field_form" type="email" name="email" placeholder="Enter your Email" required>
+                        </div>
+                        <div class="element_form--duble small">
+                            <input class="button_form button_form--small " type="submit" value="Send">
+                            <input class="button_form button_form--small button_form--cancel" type="submit" value="Done">
+                        </div>  
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-img"><img src="images/footer.png" alt="Company logo"></div>
+        </div>
+    </main>
+</body>
+</html>
